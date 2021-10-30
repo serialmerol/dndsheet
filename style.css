@@ -29,6 +29,7 @@
     display: grid;
     grid-template-areas:    "stats stats stats"
                             "columna1 columna2 columna3"
+                            "descripcion descripcion descripcion"
                             "columna1delgada columan2gruesa columna2gruesa"
                             "magicstat magicstat magicstat"
                             "magia1 magia2 magia3";
@@ -45,6 +46,9 @@
     grid-area: columna2;
 }.columna3{
     grid-area: columna3;
+}
+.descripcion{
+    grid-area: descripcion;
 }
 .columna1delgada{
     grid-area: columna1delgada;
