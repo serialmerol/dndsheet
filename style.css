@@ -3,28 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.personaje{
-    display: grid;
-    grid-template-areas:    "nombre clase nivel trasfondo"
-                            "nombre raza alineamiento xp";
-}
-.nombre{
-    grid-area: nombre;
-}
-.clase{
-    grid-area: clase;
-}.nivel{
-    grid-area: nivel;
-}.trasfondo{
-    grid-area: trasfondo;
-}.raza{
-    grid-area: raza;
-}.alineamiento{
-    grid-area: alineamiento;
-}.xp{
-    grid-area: xp;
-}
 
+/*----------Layout principal----------*/
 .sheet{
     display: grid;
     grid-template-areas:    "stats stats stats"
@@ -65,4 +45,62 @@
     grid-area: magia2;
 }.magia3{
     grid-area: magia3;
+}
+
+/*----------Datos de Personaje----------*/
+.personaje{
+    display: grid;
+    grid-template-areas:    "nombre clase nivel trasfondo"
+                            "nombre raza alineamiento xp";
+}
+.nombre{
+    grid-area: nombre;
+}
+.clase{
+    grid-area: clase;
+}.nivel{
+    grid-area: nivel;
+}.trasfondo{
+    grid-area: trasfondo;
+}.raza{
+    grid-area: raza;
+}.alineamiento{
+    grid-area: alineamiento;
+}.xp{
+    grid-area: xp;
+}
+
+/*----------Descripcion del  Personaje----------*/
+.descripcion{
+    display: grid;
+    grid-template-areas:    "nombre edad altura peso"
+                            "nombre ojos piel cabello";
+}
+.nombre{
+    grid-area: nombre;
+}
+.edad{
+    grid-area: edad;
+}.altura{
+    grid-area: altura;
+}.peso{
+    grid-area: peso;
+}.ojos{
+    grid-area: ojos;
+}.piel{
+    grid-area: piel;
+}.cabello{
+    grid-area: cabello;
+}
+
+/*----------Stats de Mago----------*/
+.magicstat{
+    display: flex;
+    justify-content: space-around;
+}
+.titulo1{
+    display: flex;
+}
+.titulo2{
+    display: flex;
 }
