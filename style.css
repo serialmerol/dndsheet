@@ -3,104 +3,261 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url(parchment.jpg);
+    background-size: cover;
+}
+/*----------Pantalla Celular maximo 400px----------*/
+@media  screen and (max-width:400px) {
+    .num{
+        width: 4rem;
+    }
+    .personaje{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: .5rem;
+    }
+    .stats div{
+        width: 33%;
+    }
+    .stats input{
+        width: 50%;
+    }
+    .columna1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: baseline;
+        margin: 1rem;
+    }
+    .columna1 div{
+        margin: .5rem;
+    }
+    .save div{
+        margin: .3rem;
+    }
+    .columna2{
+        display: grid;
+        grid-template-areas:    "armadura iniciativa velocidad"
+                                "vidaa vidaa vidaa"
+                                "vidat vidat vidat"
+                                "hit save save"
+                                "ataspell ataspell ataspell"
+                                "equipo equipo equipo";
+    }
+    .armadura{
+        grid-area: armadura;
+        margin-left: 1rem;
+    }
+    .iniciativa{
+        grid-area: iniciativa;
+    }
+    .velocidad{
+        grid-area: velocidad;
+    }
+    .vidaa{
+        grid-area: vidaa;
+        display: flex;
+        flex-flow: column;
+        margin: 1rem;
+    }
+    .vidat{
+        grid-area: vidat;
+        display: flex;
+        flex-flow: column;
+        margin: 1rem;
+    }
+    .hit{
+        grid-area: hit;
+        display: flex;
+        flex-flow: column;
+        margin: .5rem;
+    }
+    .save{
+        grid-area: save;
+    }
+    .ataspell{
+        grid-area: ataspell;
+    }
+    .equipo{
+        grid-area: equipo;
+    }
+    .columna3{
+        margin: 1rem;
+        display: flexbox;
+    }
+    .ataspell{
+        display: flex;
+        flex-flow: column;
+        margin: .5rem;
+    }
+    .armas{
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        margin: .3rem;
+    }
+    .equipo{
+        display: grid;
+        grid-template-areas:    "tit tit"
+                                "pc stuff"
+                                "pp stuff"
+                                "pe stuff"
+                                "po stuff"
+                                "ppt stuff";
+        justify-content: stretch;
+        margin: 1rem;
+    }
+    .tit{
+        grid-area: tit;
+    }
+    .pc{
+        grid-area: pc;
+    }
+    .pp{
+        grid-area: pp;
+    }
+    .pe{
+        grid-area: pe;
+    }
+    .po{
+        grid-area: po;
+    }
+    .ppt{
+        grid-area: ppt;
+    }
+    .stuff{
+        grid-area: stuff;
+    }
+    .personalidad{
+        margin-bottom: 1rem;
+    }
+    .personalidad div{
+        display: flex;
+        flex-flow: column;
+        margin: .5rem;
+    }
+    .rya{
+        display: flex;
+        flex-flow: column;
+        margin: .5rem;
+    }
+    .descripcion{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+}
 
-/*----------Layout principal----------*/
-.sheet{
-    display: grid;
-    grid-template-areas:    "stats stats stats"
-                            "columna1 columna2 columna3"
-                            "descripcion descripcion descripcion"
-                            "columna1delgada columan2gruesa columna2gruesa"
-                            "magicstat magicstat magicstat"
-                            "magia1 magia2 magia3";
-}
-.stats{
-    grid-area: stats;
-    display: flex;
-    justify-content: space-around;
-}
-.columna1{
-    grid-area: columna1;
-}
-.columna2{
-    grid-area: columna2;
-}.columna3{
-    grid-area: columna3;
-}
-.descripcion{
-    grid-area: descripcion;
-}
-.columna1delgada{
-    grid-area: columna1delgada;
-}.columna2gruesa{
-    grid-area: columna2gruesa;
-}
-.magicstat{
-    grid-area: magicstat;
-}
-.magia1{
-    grid-area: magia1;
-}
-.magia2{
-    grid-area: magia2;
-}.magia3{
-    grid-area: magia3;
-}
+/*---------Demas Pantallas----------*/
 
-/*----------Datos de Personaje----------*/
-.personaje{
-    display: grid;
-    grid-template-areas:    "nombre clase nivel trasfondo"
-                            "nombre raza alineamiento xp";
-}
-.nombre{
-    grid-area: nombre;
-}
-.clase{
-    grid-area: clase;
-}.nivel{
-    grid-area: nivel;
-}.trasfondo{
-    grid-area: trasfondo;
-}.raza{
-    grid-area: raza;
-}.alineamiento{
-    grid-area: alineamiento;
-}.xp{
-    grid-area: xp;
-}
+@media screen and (min-width:400px) {
+    .sheet{
+        display: grid;
+        grid-template-areas:    "personaje personaje personaje"
+                                "stats stats stats"
+                                "columna1 columna2 columna3"
+                                "descripcion descripcion descripcion"
+                                "columna1delgada columan2gruesa columna2gruesa"
+                                "magicstat magicstat magicstat"
+                                "magia1 magia2 magia3";
+    }
+    .stats{
+        grid-area: stats;
+        display: flex;
+        justify-content: space-around;
+    }
+    .columna1{
+        grid-area: columna1;
+    }
+    .columna2{
+        grid-area: columna2;
+    }.columna3{
+        grid-area: columna3;
+    }
+    .descripcion{
+        grid-area: descripcion;
+    }
+    .columna1delgada{
+        grid-area: columna1delgada;
+    }.columna2gruesa{
+        grid-area: columna2gruesa;
+    }
+    .magicstat{
+        grid-area: magicstat;
+    }
+    .magia1{
+        grid-area: magia1;
+    }
+    .magia2{
+        grid-area: magia2;
+    }.magia3{
+        grid-area: magia3;
+    }
+    
+    /*----------Datos de Personaje----------*/
+    .personaje{
+        grid-area: personaje;
+        display: grid;
+        grid-template-areas:    "nombre clase nivel trasfondo"
+                                "nombre raza alineamiento xp";
+    }
+    .nombre{
+        grid-area: nombre;
+    }
+    .clase{
+        grid-area: clase;
+    }.nivel{
+        grid-area: nivel;
+    }.trasfondo{
+        grid-area: trasfondo;
+    }.raza{
+        grid-area: raza;
+    }.alineamiento{
+        grid-area: alineamiento;
+    }.xp{
+        grid-area: xp;
+    }
+    
+    /*----------Descripcion del  Personaje----------*/
+    .descripcion{
+        display: grid;
+        grid-template-areas:    "nombre edad altura peso"
+                                "nombre ojos piel cabello";
+    }
+    .nombre{
+        grid-area: nombre;
+    }
+    .edad{
+        grid-area: edad;
+    }.altura{
+        grid-area: altura;
+    }.peso{
+        grid-area: peso;
+    }.ojos{
+        grid-area: ojos;
+    }.piel{
+        grid-area: piel;
+    }.cabello{
+        grid-area: cabello;
+    }
+    
+    /*----------Stats de Mago----------*/
+    .magicstat{
+        display: flex;
+        justify-content: space-around;
+    }
+    .titulo1{
+        display: flex;
+    }
+    .titulo2{
+        display: flex;
+    }
 
-/*----------Descripcion del  Personaje----------*/
-.descripcion{
-    display: grid;
-    grid-template-areas:    "nombre edad altura peso"
-                            "nombre ojos piel cabello";
-}
-.nombre{
-    grid-area: nombre;
-}
-.edad{
-    grid-area: edad;
-}.altura{
-    grid-area: altura;
-}.peso{
-    grid-area: peso;
-}.ojos{
-    grid-area: ojos;
-}.piel{
-    grid-area: piel;
-}.cabello{
-    grid-area: cabello;
-}
-
-/*----------Stats de Mago----------*/
-.magicstat{
-    display: flex;
-    justify-content: space-around;
-}
-.titulo1{
-    display: flex;
-}
-.titulo2{
-    display: flex;
 }

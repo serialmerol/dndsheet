@@ -9,102 +9,319 @@
 </head>
 <body>
     <header>
+        <div>MENU</div>        
+    </header>
+    <main class="sheet">
         <div class="personaje">
             <div class="nombre">
                 <p>nombre</p>
+                <input type="text">
             </div>
             <div class="clase">
                 <p>clase</p>
+                <input type="text">
             </div>
             <div class="nivel">
                 <p>nivel</p>
+                <input type="number">
             </div>
             <div class="trasfondo">
                 <p>transfondo</p>
+                <input type="text">
             </div>
             <div class="raza">
                 <p>raza</p>
+                <input type="text">
             </div>
             <div class="alineamiento">
                 <p>alineamiento</p>
+                <input type="text">
             </div>
             <div class="xp">
                 <p>xp</p>
+                <input type="number">
             </div>
         </div>
-    </header>
-    <main class="sheet">
         <div class="stats">
-            <div>Fuerza</div>
-            <div>Destreza</div>
-            <div>Constitucion</div>
-            <div>Inteligencia</div>
-            <div>Sabiduria</div>
-            <div>Carisma</div>
+            <div>
+                <p> Fuerza </p>
+                <input type="number">
+            </div>
+            <div>
+                <p> Destreza </p>
+                <input type="number">
+            </div>
+            <div>
+                <p> Constitucion </p>
+                <input type="number">
+            </div>
+            <div>
+                <p> Inteligencia </p>
+                <input type="number">
+            </div>
+            <div>
+                <p> Sabiduria </p>
+                <input type="number">
+            </div>
+            <div>
+                <p> Carisma </p>
+                <input type="number">
+            </div>
         </div>
         <div class="columna1">
-            <div>Inspiracion</div>
-            <div>Bonificador de competencia</div>
             <div>
-                <p>Tiradas de salvacion</p>
-                <ul>
-                    <li>Fuerza</li>
-                    <li>Destreza</li>
-                    <li>Constitucion</li>
-                    <li>Inteligencia</li>
-                    <li>Sabiduria</li>
-                    <li>Carisma</li>
-                </ul>
+                <p>Inspiracion</p>
+                <input type="number" class="num">
+            </div>
+            <div>
+                <p>Bonificador de Competencia</p>
+                <input type="number" class="num">
+            </div>
+            <div class="save">
+                <div>Tiradas de salvacion</div>
+                <div>
+                    <input type="checkbox" name="fuerza" id="">
+                    <input type="number" class="num">
+                    <span>Fuerza</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="destreza" id="">
+                    <input type="number" class="num">
+                    <span>Destreza</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="constitucion" id="">
+                    <input type="number" class="num">
+                    <span>Constitucion</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="inteligencia" id="">
+                    <input type="number" class="num">
+                    <span>Inteligencia</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="sabiduria" id="">
+                    <input type="number" class="num">
+                    <span>Sabiduria</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="carisma" id="">
+                    <input type="number" class="num">
+                    <span>Carisma</span>
+                </div>
             </div>
             <div>
                 <p>Habilidades</p>
-                <ul>
-                    <li>Acrobacias</li>
-                    <li>Arcanos</li>
-                    <li>Atletismo</li>
-                    <li>Engaño</li>
-                    <li>Historia</li>
-                    <li>Interpretacion</li>
-                    <li>Intimidacion</li>
-                    <li>Investigacion</li>
-                    <li>Juego de Manos</li>
-                    <li>Medicina</li>
-                    <li>Naturaleza</li>
-                    <li>Percepcion</li>
-                    <li>Perspicacia</li>
-                    <li>Persuacion</li>
-                    <li>Religion</li>
-                    <li>Sigilo</li>
-                    <li>Supervivencia</li>
-                    <li>Trato con animales</li>
-                </ul>
+                <div>
+                    <input type="checkbox" name="acrobacia" id="">
+                    <input type="number" class="num">
+                    <span>Acrobacia(Des)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="arcanos" id="">
+                    <input type="number" class="num">
+                    <span>Arcanos(Int)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="atletismo" id="">
+                    <input type="number" class="num">
+                    <span>Atletismo(Fue)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="engano" id="">
+                    <input type="number" class="num">
+                    <span>Engaño(Car)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="historia" id="">
+                    <input type="number" class="num">
+                    <span>Historia(Int)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="interpretacion" id="">
+                    <input type="number" class="num">
+                    <span>interpretacion(Car)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="intimidacion" id="">
+                    <input type="number" class="num">
+                    <span>Intimidacion(Car)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="investigacion" id="">
+                    <input type="number" class="num">
+                    <span>Investigacion(Int)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="manos" id="">
+                    <input type="number" class="num">
+                    <span>Juego de Manos(Des)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="medicina" id="">
+                    <input type="number" class="num">
+                    <span>Medicina(Sab)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="naturaleza" id="">
+                    <input type="number" class="num">
+                    <span>Naturaleza(Int)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="percepcion" id="">
+                    <input type="number" class="num">
+                    <span>Percepcion(Sab)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="perspicacia" id="">
+                    <input type="number" class="num">
+                    <span>Perspicacia(Sab)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="persuacion" id="">
+                    <input type="number" class="num">
+                    <span>Persuacion(Car)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="religion" id="">
+                    <input type="number" class="num">
+                    <span>Religion(Int)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="sigilo" id="">
+                    <input type="number" class="num">
+                    <span>Sigilo(Des)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="supervivencia" id="">
+                    <input type="number" class="num">
+                    <span>Supervivencia(Sab)</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="animales" id="">
+                    <input type="number" class="num">
+                    <span>Trato con Animales(Sab)</span>
+                </div>
             </div>
-            <div>sabiduria pasiva (percepcion)</div>
-            <div>Otras Competencias e Idiomas</div>
+            <div>
+                <input type="number" class="num">
+                <span>sabiduria pasiva (percepcion)</span>
+            </div>
+            <div>
+                <p>Otras Competencias e Idiomas</p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
         </div>
         <div class="columna2">
-            <div>Puntos de armadura</div>
-            <div>Iniciativa</div>
-            <div>Velocidad</div>
-            <div>Puntos de Vida Actuales</div>
-            <div>Puntos de Vida Temporales</div>
-            <div>Dado de Golpe</div>
-            <div>
-                <p>Tiros de Salvacion</p>
-                <div>Exitos</div>
-                <div>Fallos</div>
+            <div class="armadura">
+                <p>Puntos de armadura</p>
+                <input type="number" class="num">
             </div>
-            <div>Ataques y Conjuros</div>
-            <div>Equipo</div>
+            <div class="iniciativa">
+                <p>Iniciativa</p>
+                <input type="number" class="num">
+            </div>
+            <div class="velocidad">
+                <p>Velocidad</p>
+                <input type="number" class="num">
+            </div>
+            <div class="vidaa">
+                <p>Puntos de Vida Actuales</p>
+                <span>Vida Maxima<input type="number" class="num"></span>                
+                <textarea name="" id="" cols="3" rows="5"></textarea>
+            </div>
+            <div class="vidat">
+                <p>Puntos de Vida Temporales</p>
+                <textarea name="" id="" cols="3" rows="5"></textarea>
+            </div>
+            <div class="hit">
+                <p>Dado de Golpe</p>
+                <textarea name="" id="" cols="2" rows="2"></textarea>
+            </div>
+            <div class="save">
+                <p>Tiros de Salvacion</p>
+                <div>
+                <span>Exitos</span>
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                </div>
+                <div>
+                <span>Fallos</span>
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
+            <div class="ataspell">
+                <p>Ataques y Conjuros</p>
+                <div class="armas">
+                    <span>Nombre</span>
+                    <span>Bonif.</span>
+                    <span>Daño</span>
+                    <input type="number">
+                    <input type="number" class="num">
+                    <input type="number">
+                    <input type="number">
+                    <input type="number" class="num">
+                    <input type="number">
+                    <input type="number">
+                    <input type="number" class="num">
+                    <input type="number">
+                    <input type="number">
+                    <input type="number" class="num">
+                    <input type="number">
+                </div>
+                <textarea name="" id="" cols="5" rows="5"></textarea>
+            </div>
+            <div class="equipo">
+                <p class="tit">Equipo</p>
+                <div class="pc">
+                    <span>PC</span>
+                    <input type="number" class="num">
+                </div>
+                <div class="pp">
+                    <span>PP</span>
+                    <input type="number" class="num">
+                </div>
+                <div class="pe">
+                    <span>PE</span>
+                    <input type="number" class="num">
+                </div>
+                <div class="po">
+                    <span>PO</span>
+                    <input type="number" class="num">
+                </div>
+                <div class="ppt">
+                    <span>PPT</span>
+                    <input type="number" class="num">
+                </div>
+                <textarea name="" id="" cols="20" rows="10" class="stuff"></textarea>
+            </div>
         </div>
         <div class="columna3">
             <div class="personalidad">
-                <div>Rasgos de Personalidad</div>
-                <div>Ideales</div>
-                <div>Vinculos</div>
-                <div>Defectos</div>
+                <div>
+                    <p>Personalidad</p>
+                    <textarea name="" id="" cols="10" rows="5"></textarea>
+                </div>
+                <div>
+                    <p>Ideales</p>
+                    <textarea name="" id="" cols="10" rows="5"></textarea>
+                </div>
+                <div>
+                    <p>Vinculos</p>
+                    <textarea name="" id="" cols="10" rows="5"></textarea>
+                </div>
+                <div>
+                    <p>Defectos</p>
+                    <textarea name="" id="" cols="10" rows="5"></textarea>
+                </div>
             </div>
-            <div>Rasgos y Atributos</div>
+            <div class="rya">
+                <p>Rasgos Y Atributos</p>
+                <textarea name="" id="" cols="10" rows="20"></textarea>
+            </div>
         </div>
         <div class="descripcion">
             <div class="nombre">
