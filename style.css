@@ -12,6 +12,9 @@ body{
     .num{
         width: 4rem;
     }
+    .texto{
+        max-width: 80%;
+    }
     .personaje{
         display: flex;
         justify-content: space-between;
